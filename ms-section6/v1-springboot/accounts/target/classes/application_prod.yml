@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "1.0.0"
+
+accounts:
+  message: "Welcome to the Accounts Service in Production Environment"
+  contactDetails:
+    name: "Smitha Kumar - Product Lead"
+    email: "Ttqgj@example.com"
+  onCallSupport:
+    -(555) 555-5555
+    -(555) 555-5556
