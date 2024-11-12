@@ -1,6 +1,10 @@
 server:
   port: 8080
 spring:
+  application:
+    name: "accounts"
+  profiles:
+    active: "prod"
   datasource:
     url: jdbc:h2:mem:testdb
     driverClassName: org.h2.Driver
@@ -15,22 +19,15 @@ spring:
       ddl-auto: update
     show-sql: true
   config:
-    import:
-      - "application_prod.yml"
-      - "application_qa.yml"
-  profiles:
-    active:
-      - "qa"
+    import: "optional:configserver:http://localhost:8071/"
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
 
-
-build:
-  version: "3.0.0"
-
-accounts:
-  message: "Hello, World!"
-  contactDetails:
-    name: "My Account"
-    email: "0lY9M@example.com"
-  onCallSupport:
-    -(555) 555-5555
-    -(555) 555-5556
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
