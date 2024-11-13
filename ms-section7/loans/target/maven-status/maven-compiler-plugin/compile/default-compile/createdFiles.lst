@@ -1,0 +1,17 @@
+com\bank_ms\exception\ResourceNotFoundException.class
+com\bank_ms\exception\GlobalExceptionHandler.class
+com\bank_ms\entity\Loans.class
+com\bank_ms\dto\LoansDto.class
+com\bank_ms\entity\BaseEntity.class
+com\bank_ms\service\ILoansService.class
+com\bank_ms\service\impl\LoansServiceImpl.class
+com\bank_ms\constants\LoansConstants.class
+com\bank_ms\dto\ErrorResponseDto.class
+com\bank_ms\dto\LoansContactInfoDto.class
+com\bank_ms\LoansApplication.class
+com\bank_ms\controller\LoansController.class
+com\bank_ms\repository\LoansRepository.class
+com\bank_ms\audit\AuditAwareImpl.class
+com\bank_ms\mapper\LoansMapper.class
+com\bank_ms\exception\LoanAlreadyExistsException.class
+com\bank_ms\dto\ResponseDto.class
